@@ -7,7 +7,7 @@ def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
         name = "<h1><b>AWS</b></h1>"
-    message = "<h1>Subindo uma aplicação Python na</h1> " + name + "!\n"
+    message = "<h1>Subindo uma aplicação Python na</h1> " + name + "<h1>!</h1>\n"
     return Response(message)
 
 if __name__ == '__main__':
