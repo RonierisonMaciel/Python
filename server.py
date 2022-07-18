@@ -6,8 +6,8 @@ import os
 def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
-        name = "<b>Xablau!!</b>"
-    message = "<h1>Subindo uma aplicação Python na AWS</h1> " + name + "<h1>!</h1>\n"
+        name = "<h2><b>Xablau!!</b></h2>"
+    message = "<h1>Subindo uma aplicação Python na AWS</h1> " + name + "\n"
     return Response(message)
 
 if __name__ == '__main__':
