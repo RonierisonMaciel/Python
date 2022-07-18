@@ -6,7 +6,7 @@ import os
 def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
-        name = "<h2><b>Xablau!!</b></h2>"
+        name = "<h2><b>Xablau!</b></h2>"
     message = "<h1>Subindo uma aplicação Python na AWS</h1> " + name + "\n"
     return Response(message)
 
